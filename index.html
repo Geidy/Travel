@@ -31,8 +31,24 @@
             Travel because is fun. Travel to make new friends. Travel to interact and meet new cultures.
           Travel, travel, travel...... </strong></p>
           
-            <a href="#" class="btn btn-secondary btn-md">First</a>
-            <a href="#" class="btn btn-secondary btn-md">Me, First</a>
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+        <footer>
+            
+            <button  onclick="greecePrettier()" class="btn btn-secondary">Greece is prettier..</button>
+            <strong><p id="btn1"></p></strong>
+            <script>
+              function greecePrettier(){
+                document.getElementById('btn1').innerHTML = "Iam Right";
+                }
+
+                function italyPrettier(){
+                document.getElementById('btn1').innerHTML = " No,Iam Right";
+                }     
+               </script>
+              <strong><p id="btn1"></p></strong>
+            <button onclick="italyPrettier()" class="btn btn-secondary">Italy is Prettier</button>
+            
           
         </main>
 
