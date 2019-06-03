@@ -1,0 +1,117 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary .btn-md:hover,
+.btn-secondary .btn-md:focus {
+  color: rgb(68, 41, 23);
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: rgb(211, 140, 218);
+  border: .05rem solid #000;
+  
+}
+
+/* css for forms */
+.form-group {
+  width: 100%;
+  max-width: 430px;
+  padding: 5px;
+  margin: 5px;
+}
+.form-group .checkbox {
+  font-weight: 400;
+}
+.form-group .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 05px;
+  font-size: 16px;
+}
+.form-group .form-control:focus {
+  z-index: 0;
+}
+
+
+/*
+ * Base structure
+ */ 
+
+html,
+body {
+  height: 80%;
+   background-image: url(img/travel.jpg);
+   background-color: rgb(211, 140, 218);
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(245, 58, 214);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgb(202, 200, 202);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(207, 65, 184, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: rgb(238, 168, 168);
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}

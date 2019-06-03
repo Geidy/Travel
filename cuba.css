@@ -1,0 +1,81 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+   background-color: rgb(232, 221, 236);
+  }
+  
+  /*Customize the nav */
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgb(243, 187, 243);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(207, 65, 184, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: rgb(238, 168, 168);
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: center;
+  }
+  
+  
+
+ .body .p{
+   position: center;
+   font-variant-position: center;
+ }
+ .body .p .li{
+   position:left;
+ }
+
+  /*Jumbotron customization */
+  .jumbotron {
+    background-image: url("img/cubagreen0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-md {
+      font-size: 3.5rem;
+    }
+  }
+  
