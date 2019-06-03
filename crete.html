@@ -97,11 +97,23 @@
 
           <div class="row featurette">
               <div class="col-md-7">
+                  <button id="showMessage" type="button" onclick="showMessage();" class="btn btn-primary btn-block">Don't Hover/Click over me</button>
+
                 <h2 class="featurette-heading">Doxaro amazing Marmol formation. <span class="text-muted">It’ll blow your mind.</span></h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, 
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. At et non dolore deserunt cumque exercitationem odio eos voluptatibus similique qui eligendi 
                   optio aliquid accusantium, perspiciatis, alias laboriosam fugiat distinctio eius. vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  
               </div>
+
+              <!--Script for the hoverclick button-->
+              <script type="text/javascript">
+              
+                  function showMessage() {
+                    alert('Hey, I told you not to hover/click over me...');
+                   }
+              </script>
+
               <div class="col-md-5">
                 <img src="img/Doxaro2.jpg" svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
               </div>
