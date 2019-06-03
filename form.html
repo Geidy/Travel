@@ -71,17 +71,19 @@
         </form>
         <footer>
             
-            <button  id="btn1" onclick="greecePrettier()" class="btn btn-secondary">Greece is prettier..</button>
+            <button  onclick="greecePrettier()" class="btn btn-secondary">Greece is prettier..</button>
+            <strong><p id="btn1"></p></strong>
             <script>
               function greecePrettier(){
-                document.getElementById('btn1').innerHTML = text("Iam Right");
+                document.getElementById('btn1').innerHTML = "Iam Right";
                 }
-                   
-            
 
-             </script>
-
-            <p><button onclick="replaceText()">Replace</button></p>
+                function italyPrettier(){
+                document.getElementById('btn1').innerHTML = " No,Iam Right";
+                }     
+               </script>
+              <strong><p id="btn1"></p></strong>
+            <button onclick="italyPrettier()" class="btn btn-secondary">Italy is Prettier</button>
             
             
               
