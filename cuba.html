@@ -39,8 +39,46 @@
                 </div>
 
                 <div class="container">
-                  <div class="row">
-                      <button type="button" class="btn btn-primary">Calculation</button>                    
+                  <div class="row-lg-4">
+                   
+                    <div class="columns-md-4">
+                      <button type="button" onclick="volume_sphere() ;" class="btn btn-primary"> Calcuate: Sphere Volume</button> 
+                    </div>
+                                    
+                  </div>
+                  
+                        <form id="myForm">
+                                                        
+                            <div class="form-row">
+                              <div class="col">
+                              <label for="formGroupExampleInput"><strong>Enter the Radio</strong></label>
+                              <input type="text" class="form-control" id="radioInput" placeholder="Enter Value">
+                            </div>
+                          </div>
+                            <div class="form-row">
+                              <div class="col">
+                                <label for="volResult"><strong>Sphere Volume, Result</strong></label>
+                                <input type="text" class="form-control" id="volResult" placeholder="Result">
+                              </div>
+                            </div>
+
+                            <script> 
+                            function volume_sphere()    {
+                                let volume;
+                                let radius = document.getElementById('radioInput').value;
+                                 radius = Math.abs(radius);
+                                 volume = (4/3) * Math.PI * Math.pow(radius, 3);
+                                 volume = volume.toFixed(4);
+                                 document.getElementById('volResult').value = volume;
+                                 return false;
+                              } 
+    
+                               window.onload = document.getElementById('myForm').onsubmit = volume_sphere;          
+                              
+                            </script>
+                            
+                          </form>
+                    </div>
                   </div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos inventore
                      quidem odio voluptate et, cumque quae adipisci ut. 
